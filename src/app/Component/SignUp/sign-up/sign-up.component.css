@@ -1,0 +1,206 @@
+@media  screen and (max-width: 480px) {
+  .signUpPanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+.signUpPanelInner{
+  height: 100%;
+  width: 100%;
+}
+  .signUpPanelLeft{
+    width: 100%;
+    height: 175px;
+  }
+  .signUpPanelRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 79.8%;
+    background-color: #EFF5FF;
+  }
+  .signUpPanelRightTop{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    top: -10%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+.signUpPanelRightDown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  height: 72px;
+  background-color: white;
+  }
+  .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #022959;
+    color: white;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+
+  }
+  .next:hover{
+    background-color: #164A8A;
+  }
+  .goBack{
+    padding: 0;
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    color: #9699aa;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .goBack:hover{
+    color: #022959;
+  }
+  .confirmation-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 242px;
+
+  }
+  .confirmationMiddle{
+   text-align: center;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #022959;
+  }
+  .confirmationDown{
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #9699aa;
+  }
+}
+
+
+
+@media screen and (min-width: 620px) {
+  .signUpPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh
+  ;
+    border: 1px solid red;
+    background-color: #EFF5FF;
+  }
+  .signUpPanelInner{
+    width: 58.75rem;
+    height: 37.5rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .signUpPanelLeft{
+    height: 568px;
+    width: 17.15rem;
+    border-radius: 10px;
+  }
+  .signUpPanelRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 568px;
+    width: 100%;
+  }
+  .signUpPanelRightTop{
+    margin-top: 50px;
+    height: auto;
+    width: 28.125rem;
+  }
+  .signUpPanelRightDown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 48px;
+  }
+  .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: #022959;
+    color: white;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .next:hover{
+    background-color: #164A8A;
+  }
+  .goBack{
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #9699aa;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .goBack:hover{
+   color: #022959;
+  }
+  .confirmation-section{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 238px;
+
+  }
+  .confirmationMiddle{
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: #022959;
+  }
+  .confirmationDown{
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #9699aa;
+  }
+}

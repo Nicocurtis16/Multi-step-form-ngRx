@@ -1,0 +1,262 @@
+
+@media  screen and (max-width: 480px) {
+  .yourInfoPanel{
+    width: auto;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*border:1px solid red;*/
+  }
+  .yourInfoDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:90% ;
+    height: 87px;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+
+
+  }
+  .yourInfoTitle{
+    font-family: Ubuntu-Bold,sans-serif;
+    font-size: 24px;
+    color: #022959;
+
+  }
+  .yourInfoInfo{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 16px;
+    color: #9699aa;
+    line-height: 25px;
+  }
+  .yourInfoForm{
+    width: 90%;
+    height: 203px;
+    /*background-color: #022959;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /*border: 1px solid red;*/
+  }
+  .yourInfoFormOne{
+    width: auto;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /*border: 1px solid blueviolet;*/
+  }
+  label {
+    display: block;
+    /*margin-bottom: 5px;*/
+    font-family: Ubuntu-Medium,sans-serif;
+    color: #022959;
+    font-size: 12px;
+  }
+  .form-control {
+    font-family: Ubuntu-Medium,sans-serif;
+
+    width: 96%;
+    height: 40px;
+    padding-left: 10px;
+    /*border: 1px solid #D6D9E6;*/
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .form-control:focus {
+    border: 1px solid #483eff;
+    color: #022959;
+    outline: #483eff;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 16px;
+  }
+  input::placeholder {
+    color: #9699aa;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .error-input {
+    border: 1px solid #EE374A;
+  }
+}
+@media screen and (min-width: 620px) {
+  .yourInfoPanel{
+    width: 450px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*border:1px solid red;*/
+  }
+  .yourInfoDetail{
+    width: 100%;
+    height: 68px;
+    /*background-color: #9699aa;*/
+
+  }
+  .yourInfoTitle{
+    font-family: Ubuntu-Bold,sans-serif;
+    font-size: 32px;
+    color: #022959;
+
+  }
+  .yourInfoInfo{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 16px;
+    color: #9699aa;
+  }
+  .yourInfoForm{
+    width: 100%;
+    height: 264px;
+    /*background-color: #022959;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .yourInfoFormOne{
+    width: 450px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /*border: 2px solid blueviolet;*/
+  }
+  label {
+    display: block;
+    /*margin-bottom: 5px;*/
+    font-family: Ubuntu-Medium,sans-serif;
+    color: #022959;
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-family: Ubuntu-Medium,sans-serif;
+
+    width: 97%;
+    height: 48px;
+    padding-left: 10px;
+    border: 1px solid #D6D9E6;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
+  .form-control:hover {.yourInfoPanel {
+    width: 450px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+    .yourInfoDetail {
+      width: 100%;
+      height: 68px;
+    }
+
+    .yourInfoTitle {
+      font-family: Ubuntu-Bold, sans-serif;
+      font-size: 32px;
+      color: #022959;
+    }
+
+    .yourInfoInfo {
+      font-family: Ubuntu-Medium, sans-serif;
+      font-size: 16px;
+      color: #9699aa;
+    }
+
+    .yourInfoForm {
+      width: 100%;
+      height: 264px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .yourInfoFormOne {
+      width: 450px;
+      height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    label {
+      display: block;
+      font-family: Ubuntu-Medium, sans-serif;
+      color: #022959;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .form-control {
+      font-family: Ubuntu-Medium, sans-serif;
+      width: 97%;
+      height: 48px;
+      padding-left: 10px;
+      border: 1px solid #d6d9e6;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-control:focus {
+      border: 1px solid #483eff;
+      color: #022959;
+      outline: #483eff;
+      font-family: Ubuntu-Medium, sans-serif;
+      font-size: 16px;
+    }
+
+    .form-control:hover {
+      border: 1px solid #483eff;
+    }
+
+    input::placeholder {
+      color: #9699aa;
+      font-size: 16px;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .error-input {
+      border: 1px solid #483EFF;
+    }
+  }
+  input ::placeholder {
+    color: #9699aa;
+    font-size: 16px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .error-input {
+    border: 1px solid #EE374A;
+  }
+}

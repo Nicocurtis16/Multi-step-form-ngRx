@@ -1,0 +1,32 @@
+<div class="yourInfoPanel">
+  <div class="yourInfoDetail">
+    <div class="yourInfoTitle">Personal info</div>
+    <div class="yourInfoInfo">Please provide your name, email address, and phone number.</div>
+  </div>
+  <form [formGroup]="yourInfoForm" class="yourInfoForm">
+    <div class="yourInfoFormOne">
+      <label for="name" >Name
+        <span *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">
+          This field is required
+        </span>
+      </label>
+      <input type="text" id="name" formControlName="name" class="form-control" [ngClass]="{'error-input': name.invalid && (name.dirty || name.touched)}" placeholder="e.g. Stephen King">
+    </div>
+    <div class="yourInfoFormOne">
+      <label for="email">Email
+        <span *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+          This field is required
+        </span>
+      </label>
+      <input type="email" id="email" formControlName="email" class="form-control" [ngClass]="{'error-input': email.invalid && (email.dirty || email.touched)}" placeholder="e.g. stephenking@lorem.com">
+    </div>
+    <div class="yourInfoFormOne">
+      <label for="phone">Phone
+        <span *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="error-message">
+          This field is required
+        </span>
+      </label>
+      <input type="tel" id="phone" formControlName="phone" class="form-control" [ngClass]="{'error-input': phone.invalid && (phone.dirty || phone.touched)}" placeholder="e.g. +1 234 567 890">
+    </div>
+  </form>
+</div>

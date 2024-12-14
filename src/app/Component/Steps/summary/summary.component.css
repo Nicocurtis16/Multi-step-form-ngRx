@@ -1,0 +1,128 @@
+.addOnsPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+  width: 100%;
+   /*background-color: #022959;*/
+}
+
+.planDetail {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #9699aa; */
+}
+
+.planTitle {
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 32px;
+  color: #022959;
+}
+
+.planInfoInfo {
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 16px;
+  color: #9699aa;
+}
+
+.summaryDetail {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.summaryDetailTop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+  background-color: #fef9ff;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.summaryDetailDown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height:22px;
+}
+.planSelected{
+  display: flex;
+  height: 65px;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #9699AA;
+}
+.selectedAddOns{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 20px;
+  margin-bottom: 20px;
+  /*background-color: yellow;*/
+}
+.planSelectedLeft{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 45px;
+  width: auto;
+}
+.planSelectedTitle{
+  font-family: Ubuntu-Medium, sans-serif;
+  color: #022959;
+  font-size: 16px;
+  line-height: 18px;
+}
+.planSelectedChange{
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 14px;
+  line-height : 20px;
+  text-decoration: underline;
+  color: #9699AA;
+}
+.planSelectedRight{
+  color: #022959;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.selectedAddOnsTitle{
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699AA;
+}
+.selectedAddOnsAmount{
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #022959;
+}
+.summaryDetailTitle{
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699AA;
+}
+.summaryDetailPrice{
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #483eff;
+}

@@ -1,0 +1,25 @@
+<!-- summary.component.html -->
+<div class="addOnsPanel">
+  <div class="planDetail">
+    <div class="planTitle">Finishing up</div>
+    <div class="planInfoInfo">Double-check everything looks OK before confirming.</div>
+  </div>
+  <div class="summaryDetail">
+    <div class="summaryDetailTop">
+      <div class="planSelected" *ngIf="formData?.selectPlan">
+        <div class="planSelectedLeft">
+          <div class="planSelectedTitle">{{ formData.selectPlan?.name }} ({{ formData.selectPlan?.price }})</div>
+          <div class="planSelectedChange" (click)="changePlan()">Change</div>        </div>
+        <div class="planSelectedRight">{{ formData.selectPlan?.price }}</div>
+      </div>
+      <div class="selectedAddOns" *ngFor="let addOn of formData?.addOns">
+        <div class="selectedAddOnsTitle">{{ addOn?.optionTitle }}</div>
+        <div class="selectedAddOnsAmount">{{ addOn?.price }}</div>
+      </div>
+    </div>
+    <div class="summaryDetailDown">
+      <div class="summaryDetailTitle">Total (per month)</div>
+      <div class="summaryDetailPrice">+{{ calculateTotal() }}/mo</div>
+    </div>
+  </div>
+</div>

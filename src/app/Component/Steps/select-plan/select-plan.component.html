@@ -1,0 +1,41 @@
+<div class="planPanel">
+  <div class="planDetail">
+    <div class="planTitle">Select your plan</div>
+    <div class="planInfoInfo">You have the option of monthly or yearly billing.</div>
+  </div>
+  <div class="paymentPlanPanel" *ngIf="isMonthly">
+    <div class="paymentCard" *ngFor="let plan of monthlyPlans">
+      <div class="paymentCardLogo">
+        <img [src]="plan.imgUrl" alt="">
+      </div>
+      <div class="paymentCardDetails">
+        <div class="paymentCardTitle">{{plan.name}}</div>
+        <div class="paymentCardAmount">{{plan.price}}</div>
+        <div class="paymentInfo">{{plan.free}}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="paymentPlanPanel" *ngIf="!isMonthly">
+    <div (click)="selectPlan(plan)" *ngFor="let plan of yearlyPlans" class="paymentCard">
+      <div class="paymentCardLogo">
+        <img [src]="plan.imgUrl" alt="">
+      </div>
+      <div class="paymentCardDetails">
+        <div class="paymentCardTitle">{{plan.name}}</div>
+        <div class="paymentCardAmount">{{plan.price}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="switchDuration">
+    <div class="togglePanel">
+      <span class="monthly" [ngClass]="{'active' : isMonthly }" >Monthly</span>
+      <label class="switch">
+        <input type="checkbox" (change)="togglePlan()" [checked]="isMonthly">
+        <span class="slider round"></span>
+      </label>
+      <span class="yearly" [ngClass]="{'active': !isMonthly}" >Yearly</span>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,343 @@
+@media  screen and (max-width: 480px) {
+  .planPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+
+  }
+  .planDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 88%;
+    height: 68px;
+margin-top: 20px;
+
+  }
+  .planTitle{
+    height: 28px;
+    font-family: Ubuntu-Bold,sans-serif;
+    font-size: 24px;
+    color: #022959;
+
+  }
+  .planInfoInfo{
+    height: 50px;
+    font-family: Ubuntu-Regular,sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9699aa;
+  }
+  .paymentPlanPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 260px;
+    width: 88%;
+
+
+  }
+  .paymentCard{
+    display: flex;
+    align-items: center;
+    height: 77px;
+    width: 100%;
+
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .paymentCard:active{
+    border: 1px solid #483eff;
+    background-color: #f8f9ff;
+  }
+  .paymentCard:hover{
+    border: 1px solid #483eff;
+  }
+  .paymentCardLogo{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .paymentCardDetails{
+    width: auto;
+    height: 45px;
+  }
+  .paymentCardTitle{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #022959;
+  }
+  .paymentCardAmount{
+    font-family: Ubuntu-Regular,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9699AA;
+  }
+  .switchDuration{
+    width: 88%;
+    height: 48px;
+    background-color: #f8f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .planToggle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .active {
+    color: #9699AA;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #022959;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #022959;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(17px);
+  }
+
+  .plans {
+    text-align: center;
+  }
+
+  .plan {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+  }
+  .togglePanel{
+    width: 183px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .monthly,.yearly{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .paymentInfo{
+    font-family: Ubuntu-Regular,sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    color: #022959;
+  }
+
+}
+
+  @media screen and (min-width: 620px) {
+  .planPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 348px;
+    width: 100%;
+
+  }
+  .planDetail{
+    width: 100%;
+    height: 68px;
+
+  }
+  .planTitle{
+    font-family: Ubuntu-Bold,sans-serif;
+    font-size: 32px;
+    color: #022959;
+
+  }
+  .planInfoInfo{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 16px;
+    color: #9699aa;
+  }
+  .paymentPlanPanel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+
+  }
+  .paymentCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 160px;
+    width: 138px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .paymentCard:active{
+    border: 1px solid #483eff;
+    background-color: #f8f9ff;
+  }
+  .paymentCard:hover{
+    border: 1px solid #483eff;
+  }
+  .paymentCardLogo{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .paymentCardDetails{
+    margin: 20px;
+    width: auto;
+    height: 45px;
+  }
+  .paymentCardTitle{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #022959;
+  }
+  .paymentCardAmount{
+    font-family: Ubuntu-Regular,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9699AA;
+  }
+  .switchDuration{
+    width: 100%;
+    height: 48px;
+    background-color: #f8f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .planToggle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .active {
+    color: #9699AA;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #022959;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #022959;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(17px);
+  }
+
+  .plans {
+    text-align: center;
+  }
+
+  .plan {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+  }
+  .togglePanel{
+    width: 183px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .monthly,.yearly{
+    font-family: Ubuntu-Medium,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .paymentInfo{
+    font-family: Ubuntu-Regular,sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    color: #022959;
+  }
+
+}
+

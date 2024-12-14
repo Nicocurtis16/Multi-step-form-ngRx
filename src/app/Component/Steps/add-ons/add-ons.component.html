@@ -1,0 +1,23 @@
+
+  <div class="addOnsPanel">
+    <div class="planDetail">
+      <div class="planTitle">Pick add-ons</div>
+      <div class="planInfoInfo">Add-ons help enhance your gaming experience.</div>
+    </div>
+    <div class="addOnsPanelOptions">
+      <form>
+        <div *ngFor="let option of options" class="optionCard" [class.checked]="isChecked(option)">
+          <input type="checkbox" [value]="option.optionTitle" (change)="onCheckboxChange($event, option)" />
+          <div class="optionDetails">
+            <div class="optionDetailsLeft">
+              <div class="optionTitle">{{ option.optionTitle }}</div>
+              <div class="optionInfo">{{ option.optionInfo }}</div>
+            </div>
+            <div class="optionDetailsRight">
+              <div class="optionPrice">{{ option.price }}</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
